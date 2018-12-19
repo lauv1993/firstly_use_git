@@ -1,4 +1,4 @@
-HEAEgit init
+git init
 git status
 工作区添加到缓存区
 git add index.html
