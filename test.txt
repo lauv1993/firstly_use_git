@@ -1,0 +1,35 @@
+HEAEgit init
+git status
+工作区添加到缓存区
+git add index.html
+缓存区添加到本地仓库
+git commit -m 'the first version'
+显示添加到本地仓库的记录
+git log
+git log --pretty=oneline
+显示操作记录
+git reflog
+版本回退
+git reset --hard HEAD^
+1.工作区修改后如果没有add到缓存区
+git checkout -- index.html
+2.工作区修改后如果没有commit到本地仓库，先撤销暂存区的修改
+git reset HEAD index.html
+通过diff查看暂存区和工作区的不同
+git diff
+通过下面命令发现已经修改好了
+git checkout --index.html
+3.工作区修改后如果已经提交到仓库
+版本回退
+
+删除文件
+git rm index.html
+git commit -m 'remove index.html'
+
+远程仓库
+ssh-keygen -t rsa -C lauv1993@163.com
+远程连接
+git remote add origin git@github.com:lauv1993/test.git
+git push -u origin master
+只要本地做了提交就可以通过命令:
+git push origin master
