@@ -1,0 +1,16 @@
+git init
+git status
+工作区添加到缓存区
+git add index.html
+缓存区添加到本地仓库
+git commit -m 'the first version'
+显示添加到本地仓库的记录
+git log
+显示操作记录
+git reflog
+版本回退
+git reset --hard HEAD^
+修改后如果没有add到缓存区
+git checkout -- index.html
+如果没有commit到本地仓库
+git reset HEAD index.html
