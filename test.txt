@@ -33,3 +33,6 @@ git remote add origin git@github.com:lauv1993/test.git
 git push -u origin master
 只要本地做了提交就可以通过命令:
 git push origin master
+
+如果push失败，可能是远程连接之后更改了本地仓库数据，导致数据不一致
+git pull --rebase origin master
